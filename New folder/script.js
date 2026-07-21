@@ -120,6 +120,9 @@ function goToCheckout(){
   if(Object.keys(cart).length === 0){ alert("Cart is empty!"); return; }
   show("checkout");
 }
+window.onload = function () {
+    alert("Welcome to our store!");
+};
 
 function goToPayment(){
   let n = document.getElementById("name").value.trim();
