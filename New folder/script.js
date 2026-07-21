@@ -19,7 +19,7 @@ const productsDiv = document.getElementById("products");
 
 function signup(){ localStorage.setItem(user.value, pass.value); msg.innerText="Account created!"; }
 
-/* ✅ UPDATED LOGIN FUNCTION (FIXED) */
+
 function login(){
   let storedPass = localStorage.getItem(user.value);
 
@@ -29,19 +29,19 @@ function login(){
     return;
   }
 
-  // ❌ Wrong password
+  
   if(storedPass !== pass.value){
     msg.innerText = "❌ Wrong password!";
     return;
   }
 
-  // ✅ Correct login
+  
   nav.style.display="flex";
   show("home");
   loadProducts(products);
 }
 
-/* ✅ OPTIONAL UX IMPROVEMENT */
+
 user.oninput = pass.oninput = () => msg.innerText="";
 
 function logout(){ location.reload(); }

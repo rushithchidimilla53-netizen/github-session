@@ -53,9 +53,9 @@
     .menu { 
       margin-left: 15px; 
       cursor: pointer; 
-      display:flex;              /* ✅ ADDED */
-      align-items:center;        /* ✅ ADDED */
-      gap:5px;                   /* ✅ ADDED */
+      display:flex;              
+      align-items:center;        
+      gap:5px;                   
     }
 
     .page { display: none; padding: 20px; }
